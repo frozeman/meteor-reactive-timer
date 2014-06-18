@@ -18,6 +18,7 @@ ReactiveTimer = (function () {
 
     ReactiveTimer.prototype.stop = function(){
         Meteor.clearInterval(this._intervalId);
+        this._intervalId = null;
     };
 
     ReactiveTimer.prototype.tick = function(){

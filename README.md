@@ -4,7 +4,7 @@ This package can run reactive functions in an given interval.
 
 ## Installation
 
-    $ mrt add reactive-timer
+    $ mrt install reactive-timer
 
 ## Usage
 

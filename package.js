@@ -9,3 +9,10 @@ Package.on_use(function (api, where) {
 
 	api.add_files('ReactiveTimer.js', 'client');
 });
+
+Package.on_test(function (api) {
+	api.use('reactive-timer', 'client');
+	api.use('tinytest', 'client');
+
+	api.add_files('test/tests.js', 'client');
+});
