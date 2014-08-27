@@ -1,9 +1,0 @@
-{
-  "name": "reactive-timer",
-  "description": "Allows to run reactive functions in a given interval.",
-  "homepage": "https://github.com/frozeman/meteor-reactive-timer.git",
-  "author": "Fabian Vogelsteller (http://frozeman.de)",
-  "version": "0.1.2",
-  "git": "https://github.com/frozeman/meteor-reactive-timer.git",
-  "packages": {}
-}
