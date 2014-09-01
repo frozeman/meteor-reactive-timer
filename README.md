@@ -4,7 +4,7 @@ This package can run reactive functions in an given interval.
 
 ## Installation
 
-    $ meteor add reactive-timer
+    $ meteor add mrt:reactive-timer
 
 ## Usage
 
