@@ -4,7 +4,7 @@ This package can run reactive functions in an given interval.
 
 ## Installation
 
-    $ meteor add mrt:reactive-timer
+    $ meteor add frozeman:reactive-timer
 
 ## Usage
 
@@ -23,3 +23,7 @@ To use the timer just call the following in any reactive function:
 To stop the timer use:
 
     myTimer.stop();
+
+*Additionally* you can also pass an interval when initating, so you don't need to call `myTimer.start(10)` extra:
+
+    var myTimer = new ReactiveTimer(10);

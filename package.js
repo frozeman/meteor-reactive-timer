@@ -1,7 +1,7 @@
 Package.describe({
     name: "frozeman:reactive-timer",
 	summary: "A simple timer object, which can re-run reactive functions based on an interval",
-    version: "0.1.4",
+    version: "0.1.5",
     git: "https://github.com/frozeman/meteor-reactive-timer.git"
 });
 
@@ -10,6 +10,7 @@ Package.onUse(function (api, where) {
 
     // core
 	api.use('tracker', 'client');
+    api.use('underscore', 'client');
 
 
 	api.export('ReactiveTimer');

@@ -1,10 +1,13 @@
-// #Advanced Reactivity -> Creating an advanced timer object
 ReactiveTimer = (function () {
 
     // Constructor
-    function ReactiveTimer() {
-    	this._dependecy = new Deps.Dependency;
+    function ReactiveTimer(interval) {
+    	this._dependency = new Deps.Dependency;
     	this._intervalId = null;
+
+        if(_.isFinite(interval))
+            this.start(interval);
+
     };
 
     ReactiveTimer.prototype.start = function(interval){
@@ -12,7 +15,7 @@ ReactiveTimer = (function () {
 
     	this._intervalId = Meteor.setInterval(function(){
             // rerun every "interval"
-            _this._dependecy.changed();
+            _this._dependency.changed();
         }, 1000 * interval);
     };
 
@@ -22,7 +25,7 @@ ReactiveTimer = (function () {
     };
 
     ReactiveTimer.prototype.tick = function(){
-        this._dependecy.depend();
+        this._dependency.depend();
     };
 
     return ReactiveTimer;
