@@ -2,7 +2,7 @@ ReactiveTimer = (function () {
 
     // Constructor
     function ReactiveTimer(interval) {
-    	this._dependency = new Deps.Dependency;
+    	this._dependency = new Tracker.Dependency;
     	this._intervalId = null;
 
         if(_.isFinite(interval))

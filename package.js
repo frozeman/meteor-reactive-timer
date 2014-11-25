@@ -1,7 +1,7 @@
 Package.describe({
     name: "frozeman:reactive-timer",
 	summary: "A simple timer object, which can re-run reactive functions based on an interval",
-    version: "0.1.5",
+    version: "0.1.6",
     git: "https://github.com/frozeman/meteor-reactive-timer.git"
 });
 
