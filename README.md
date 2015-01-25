@@ -24,6 +24,6 @@ To stop the timer use:
 
     myTimer.stop();
 
-*Additionally* you can also pass an interval when initating, so you don't need to call `myTimer.start(10)` extra:
+You can also pass an interval when initating, so you don't need to call `myTimer.start(10)` yourself:
 
     var myTimer = new ReactiveTimer(10);
